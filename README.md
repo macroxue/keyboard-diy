@@ -94,11 +94,11 @@ TODO: Add 3D models
  * Press the key at the column-row. Multimeter should read current.
 
 ### Connecting the right matrix to controller: 2 hours
-![Right matrix](https://github.com/macroxue/keyboard-diy/blob/master/images/Right%20matrix.jpg)
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Wiring%20controller.png)
  * Figure out how to route the wires before soldering
  * Rows are routed with fairly short wires so either solid or stranded wires work
  * Columns are routed with stranded wires for flexibility
- * The controller has its program/reset button facing up
+ * The controller has its program/reset button facing down so it's accessible without opening the case
 
 ### Connecting the left matrix to USB-C: 1 hour	
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Left%20matrix.jpg)
@@ -124,7 +124,7 @@ TODO: Add 3D models
  * Use soldering iron to remove insulation at the end of each wire
  * Wire rows of the left half to rows of the right half, so logically there are 5 rows.
  
-### Connect left columns to controller: 30 minutes
+### Connecting left columns to controller: 30 minutes
  * Ground the silver-colored mesh to GND pin of the controller. Ghost keys can pop up without this.
  * Wire columns of the left half to the controller 
 
