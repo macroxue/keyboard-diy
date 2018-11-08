@@ -1,4 +1,4 @@
-# 60% Split Keyboard DIY
+# Darknight: DIY 60% Split Keyboard 
 [Ergonomic Design](#ergonomic-design) -
 [Layout](#layout) -
 [Parts](#parts) -
