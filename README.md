@@ -1,4 +1,4 @@
-# Darknight: DIY 60% Split Keyboard 
+# Darknight: DIY 60% Split Keyboard
 [Ergonomic Design](#ergonomic-design) -
 [Layout](#layout) -
 [Parts](#parts) -
@@ -21,7 +21,7 @@
  * Fn key is at the home position of left thumb, which makes cursor moving keys on the right half easily accessible.
  * Ctrl and Fn keys are dual-role modifiers. When tapped, they produce Escape, Enter and Backspace instead. The only downside is that they can’t auto-repeat because they are modifiers when pressed and held. (Hint: Use Ctrl-Backspace to delete words.)
  * Left-click and right-click are at the bottom row of the left half. One can move the mouse with right hand and click on the keyboard with left hand.
- * Brackets and Backslash are atx the bottom row of the right half. Single-quote is right above Enter. These changes allow the right half to have only 6 columns and mirror the left half.
+ * Brackets and Backslash are at the bottom row of the right half. Single-quote is right above Enter. These changes allow the right half to have only 6 columns and mirror the left half.
 
 ## Parts
 
@@ -30,10 +30,10 @@
    * 8 M2x16 screws and 8 M2 nuts for assembling the cases
  * 60 Gateron red switches
  * 60 Blank PBT keycaps from a 120-piece set
-   * 60 O-rings for dampening 
+   * 60 O-rings for dampening
  * One Teensy 3.2 or Teensy LC as controller
  * For handwired matrix
-   * 22 AWG 6-color stranded hook-up wires 
+   * 22 AWG 6-color stranded hook-up wires
    * One 0.25mm copper sheet, 6x6 inches
    * 60 1N4148 diodes
  * One USB-C gen 2 cable (with plugs cut off) for connecting halves
@@ -42,7 +42,7 @@
 ## Tools
 
  * 3D printer
- * Soldering iron 
+ * Soldering iron
  * Tweezers
  * Wire stripper
  * Heavy duty scissors
@@ -56,10 +56,11 @@
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Inside%20cases.jpg)
 
 ### Printing cases and tenting racks: 17 hours
- * Print cases: 16 hours
- * Print tenting racks: 1 hour
+ * Print cases: 16 hours with PLA and 12 hours with ABS
+ * Print tenting racks: 2 hours with PLA and 1.5 hours with ABS
+ * Print chip covers: 10 minutes
 
-TODO: Add 3D models
+3D models in STL format as well as the OpenSCAD file producing them are in models/ directory. I use FlashPrint for FlashForge Creator Pro to convert STL files to X3G files before printing them from a SD card.
 
 ### Installing switches and keycaps: 20 minutes
  * Install switches: 10 minutes
@@ -87,7 +88,7 @@ TODO: Add 3D models
  * Solder diodes to row pins
  * Solder diodes to copper stripe. When solder is applied with the side (not the tip) of the iron touching the stripe, a small “flooding” area of solder creates a strong solder joint. <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/Soldering%20row.jpg width=200>
  * Cut off extra length of diode terminals
- 
+
 ### Testing and fixing: 20 minutes
  * Use a multimeter. Turn the dial to diode sign.
  * Red on column, black on row
@@ -100,7 +101,7 @@ TODO: Add 3D models
  * Columns are routed with stranded wires for flexibility
  * The controller has its program/reset button facing down so it's accessible without opening the case
 
-### Connecting the left matrix to USB-C: 1 hour	
+### Connecting the left matrix to USB-C: 1 hour
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Left%20matrix.jpg)
  * Prepare USB-C cable
    * Cut the plugs off
@@ -110,7 +111,7 @@ TODO: Add 3D models
    * Remove the silver-colored mesh and paper wrap to expose wires
    * Observe 4 thin wires and 10 thick wires (2 from a twisted pair)
    * Solder 4 thin wires into one
- * Pin or tap USB-C cable so it doesn’t move around 
+ * Pin or tape USB-C cable so it doesn’t move around
  * Decide which wire for which column/row
  * Color coding helps, e.g. red USB-C wire to red column wire
  * Cut wires to proper lengths
@@ -119,14 +120,14 @@ TODO: Add 3D models
 
 ### Connecting left and right rows: 30 minutes
  * Prepare USB-C cable to expose wires at the other end
- * Pin or tap USB-C cable so it doesn’t move around
- * Cut wires to proper lengths 
+ * Pin or tape USB-C cable so it doesn’t move around
+ * Cut wires to proper lengths
  * Use soldering iron to remove insulation at the end of each wire
  * Wire rows of the left half to rows of the right half, so logically there are 5 rows.
- 
+
 ### Connecting left columns to controller: 30 minutes
  * Ground the silver-colored mesh to GND pin of the controller. Ghost keys can pop up without this.
- * Wire columns of the left half to the controller 
+ * Wire columns of the left half to the controller
 
 ### Closing the cases: 10 minutes
  * Plug in USB mini cable to the controller
@@ -136,11 +137,15 @@ TODO: Add 3D models
 
 ### Installing tenting racks: 5 minutes
 
- * Cut 8mm pieces from USB-C insulation and insert rack feet into the pieces to increase friction on surface <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/Tenting%20rack.jpg width=400> 
+ * Cut 8mm pieces from USB-C insulation and insert rack feet into the pieces to increase friction on surface <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/Tenting%20rack.jpg width=400>
  * Slide each case into a rack and adjust tenting angle
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Brightday.jpg)
 
 ## Firmware
  * Note down which controller pin each row/column is wired to. There are 5 rows and 12 columns. Column 0 is where left shift is and column 11 is where right shift is.
 
-TODO: Add firmware 
+TODO: Add firmware
+
+## New build on 7/7/2019
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
+
