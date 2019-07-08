@@ -129,6 +129,17 @@
  * Ground the silver-colored mesh to GND pin of the controller. Ghost keys can pop up without this.
  * Wire columns of the left half to the controller
 
+## Uploading firmware
+ * Note down which controller pin each row/column is wired to. There are 5 rows and 12 columns. Column 0 is where left shift is and column 11 is where right shift is.
+ * Clone [firmware repo](https://github.com/macroxue/keyboard-firmware).
+ * Update [darknight2.h](https://github.com/macroxue/keyboard-firmware/blob/master/layouts/darknight2.h) with above-noted row pins and column pins.
+ * Load [keyboard-firmware.ino](https://github.com/macroxue/keyboard-firmware/blob/master/keyboard-firmware.ino) into [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
+ * Plug in new keyboard, change "Tools > Board" setting to be "Teensy LC" or "Teensy 3.2/3.1" depending on the controller chip, and change "Tools > USB Type" setting to "Keyboard + Mouse + Joystick".
+ * Use "Sketch > Verify/Compile" to make sure the firmware compiles fine, then use "Sketch > Upload" to upload the firmare to the controller.
+ * Test!
+
+It happened once that pressing any two keys among Q, W, E, R and T at the same time would also produce Tab. It was fixed by swapping the wires connecting to the first row and the second row. The exact cause is still unknown but a guess is along the line of induced current.
+
 ### Closing the cases: 10 minutes
  * Plug in USB mini cable to the controller
  * Make sure USB mini cable and USB C cable fit in the cable hole
@@ -140,14 +151,6 @@
  * Cut 8mm pieces from USB-C insulation and insert rack feet into the pieces to increase friction on surface <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/Tenting%20rack.jpg width=400>
  * Slide each case into a rack and adjust tenting angle
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Brightday.jpg)
-
-## Firmware
- * Note down which controller pin each row/column is wired to. There are 5 rows and 12 columns. Column 0 is where left shift is and column 11 is where right shift is.
- * Clone [firmware repo](https://github.com/macroxue/keyboard-firmware).
- * Update [darknight2.h](https://github.com/macroxue/keyboard-firmware/blob/master/layouts/darknight2.h) with above-noted row pins and column pins.
- * Load [keyboard-firmware.ino](https://github.com/macroxue/keyboard-firmware/blob/master/keyboard-firmware.ino) into [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
- * Plug in new keyboard, change "Tools > Board" setting to be "Teensy LC" or "Teensy 3.2/3.1" depending on the controller chip, and change "Tools > USB Type" setting to "Keyboard + Mouse + Joystick".
- * Use "Sketch > Verify/Compile" to make sure the firmware compiles fine, then use "Sketch > Upload" to upload the firmare to the controller.
 
 ## New build on 7/7/2019
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
