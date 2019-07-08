@@ -3,8 +3,7 @@
 [Layout](#layout) -
 [Parts](#parts) -
 [Tools](#tools) -
-[Construction](#construction) -
-[Firmware](#firmware)
+[Construction](#construction)
 
 ## Ergonomic Design
 
