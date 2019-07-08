@@ -143,8 +143,11 @@
 
 ## Firmware
  * Note down which controller pin each row/column is wired to. There are 5 rows and 12 columns. Column 0 is where left shift is and column 11 is where right shift is.
-
-TODO: Add firmware
+ * Clone [firmware repo](https://github.com/macroxue/keyboard-firmware).
+ * Update [darknight2.h](https://github.com/macroxue/keyboard-firmware/blob/master/layouts/darknight2.h) with above-noted row pins and column pins.
+ * Load [keyboard-firmware.ino](https://github.com/macroxue/keyboard-firmware/blob/master/keyboard-firmware.ino) into [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
+ * Plug in new keyboard, change "Tools > Board" setting to be "Teensy LC" or "Teensy 3.2/3.1" depending on the controller chip, and change "Tools > USB Type" setting to "Keyboard + Mouse + Joystick".
+ * Use "Sketch > Verify/Compile" to make sure the firmware compiles fine, then use "Sketch > Upload" to upload the firmare to the controller.
 
 ## New build on 7/7/2019
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
