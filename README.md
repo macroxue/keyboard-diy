@@ -154,5 +154,7 @@ It happened once that pressing any two keys among Q, W, E, R and T at the same t
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Brightday.jpg)
 
 ## New build on 7/7/2019
+Change of color scheme. Maybe call it Redknight or Whiteknight.
+
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
 
