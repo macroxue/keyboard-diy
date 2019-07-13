@@ -215,22 +215,30 @@ module case(left=false) {
             square([first_shelf+thickness*2, first_shelf/2+thickness]);
         }
       }
-      translate([first_shelf/2+thickness,rack_width-hook*2]) arc();
-      translate([first_shelf/2+thickness,rack_width/2]) rotate([180,0,0]) arc();
-      translate([first_shelf/2+thickness,hook*2]) rotate([0,0,180]) arc();
-      translate([first_shelf/2+thickness,rack_width/2]) arc();
+
+      module curvy() {
+        translate([first_shelf/2+thickness,rack_width-hook*2]) arc();
+        translate([first_shelf/2+thickness,rack_width/2]) rotate([180,0,0]) arc();
+        translate([first_shelf/2+thickness,hook*2]) rotate([0,0,180]) arc();
+        translate([first_shelf/2+thickness,rack_width/2]) arc();
+      }
+
+      module straight() {
+        angle=8;
+        shift=(first_shelf+thickness)*tan(angle)+0.1;
+        translate([0.5,shift]) rotate([0,0,-angle])
+          square([first_shelf + thickness*2, thickness]);
+        translate([0,rack_width/2-thickness/2])
+          square([first_shelf + thickness*2, thickness]);
+        translate([0.5,rack_width-thickness-shift]) rotate([0,0,angle])
+          square([first_shelf + thickness*2, thickness]);
+      }
 
       //translate([first_shelf/2+thickness/2,first_shelf/2+hook])
       //  square([thickness,rack_width-first_shelf-hook*2]);
 
-      //angle=8;
-      //shift=(first_shelf+thickness)*tan(angle);
-      //translate([0.5,shift]) rotate([0,0,-angle])
-      //  square([first_shelf + thickness*2, thickness]);
-      //translate([0,rack_width/2-thickness/2])
-      //  square([first_shelf + thickness*2, thickness]);
-      //translate([0.5,rack_width-thickness-shift]) rotate([0,0,angle])
-      //  square([first_shelf + thickness*2, thickness]);
+      //curvy();
+      straight();
     }
     linear_extrude(height=5) rack2d();
   }
