@@ -61,7 +61,7 @@
 
 3D models in STL format as well as the OpenSCAD file producing them are in [models](https://github.com/macroxue/keyboard-diy/tree/master/models) directory. I use FlashPrint for FlashForge Creator Pro to convert STL files to X3G files before printing them from a SD card.
 
-There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-rigid.stl) is quick to print and rigid for high tenting angle. [rack-curvy.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-rigid.stl) is good looking but not rigid. [rack-blend.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-rigid.stl) is good looking and rigid.
+There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-rigid.stl) is quick to print and rigid for high tenting angle. [rack-curvy.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-curvy.stl) is good looking but not rigid. [rack-blend.stl](https://github.com/macroxue/keyboard-diy/tree/master/models/rack-blend.stl) is good looking and rigid.
 
 ### Installing switches and keycaps: 20 minutes
  * Install switches: 10 minutes
