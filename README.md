@@ -35,7 +35,8 @@
    * 22 AWG 6-color stranded hook-up wires
    * One 0.25mm copper sheet, 6x6 inches
    * 60 1N4148 diodes
- * One USB-C gen 2 cable (with plugs cut off) for connecting halves
+ * One USB-C gen 2 cable (with plugs cut off) for connecting halves. 
+   See [issue #1](https://github.com/macroxue/keyboard-diy/issues/1).
  * One USB mini cable for connecting the keyboard to computer
 
 ## Tools
