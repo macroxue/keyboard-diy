@@ -155,7 +155,19 @@ It happened once that pressing any two keys among Q, W, E, R and T at the same t
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Brightday.jpg)
 
 ## New build on 7/7/2019
-Change of color scheme. Maybe call it Redknight or Whiteknight.
+Change of color scheme. Maybe call it WhiteKnight.
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
+
+## New build on 12/30/2020
+What else is better than building another keyboard in these holidays! I call this one RedBaron.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red%20Baron.jpg)
+
+Now I have three such keyboards, Darknight trapped at work due to the pandemic, WhiteKnight for working at home and RedBaron for personal use.
+
+For this build, I just used stranded wires for the matrix. It turns out to be simpler since the wires can be routed to the controller directly.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Stranded%20Matrix.jpg)
+
 
