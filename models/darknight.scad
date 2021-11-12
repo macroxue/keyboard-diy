@@ -185,6 +185,7 @@ module case(left=false) {
     plate();
   }
 
+  // For rack-bridge: thickness=3; first_shelf=70; second_shelf=20;
   module rack() {
     thickness=2.5;
     extra=1;
@@ -237,7 +238,7 @@ module case(left=false) {
       //translate([first_shelf/2+thickness/2,first_shelf/2+hook])
       //  square([thickness,rack_width-first_shelf-hook*2]);
 
-      //curvy();
+      curvy();
       straight();
     }
     linear_extrude(height=5) rack2d();
@@ -263,6 +264,7 @@ module chip_cover() {
 
 translate([-4*kd,-3*kd,0]) {
   case(left=false);
+  // For rack-bridge: translate([3,0,0]) mirror([1,0,0]) case(left=true);
   translate([-kd,0,0]) mirror([1,0,0]) case(left=true);
   //translate([-2,0,0]) rotate([0,180,0]) teensy(0,3.5,0);
   rotate([0,180,0]) chip_cover();

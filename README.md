@@ -35,7 +35,7 @@
    * 22 AWG 6-color stranded hook-up wires
    * One 0.25mm copper sheet, 6x6 inches
    * 60 1N4148 diodes
- * One USB-C gen 2 cable (with plugs cut off) for connecting halves. 
+ * One USB-C gen 2 cable (with plugs cut off) for connecting halves.
    See [issue #1](https://github.com/macroxue/keyboard-diy/issues/1).
  * One USB mini cable for connecting the keyboard to computer
 
@@ -170,4 +170,8 @@ For this build, I just used stranded wires for the matrix. It turns out to be si
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Stranded%20Matrix.jpg)
 
+## High-angle tenting on 11/12/2021
 
+A bridge connecting the two halves turns out to be a good solution for high-angle tenting. The bridge is simply the two tenting racks joined together, with small adjustments in size.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Bridge.jpg)
