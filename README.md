@@ -3,7 +3,8 @@
 [Layout](#layout) -
 [Parts](#parts) -
 [Tools](#tools) -
-[Construction](#construction)
+[Construction](#construction) -
+[Updates](#updates)
 
 ## Ergonomic Design
 
@@ -154,12 +155,13 @@ It happened once that pressing any two keys among Q, W, E, R and T at the same t
  * Slide each case into a rack and adjust tenting angle
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Brightday.jpg)
 
-## New build on 7/7/2019
+## Updates
+### New build on 7/7/2019
 Change of color scheme. Maybe call it WhiteKnight.
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red-n-white.jpg)
 
-## New build on 12/30/2020
+### New build on 12/30/2020
 What else is better than building another keyboard in these holidays! I call this one RedBaron.
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Red%20Baron.jpg)
@@ -170,7 +172,7 @@ For this build, I just used stranded wires for the matrix. It turns out to be si
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Stranded%20Matrix.jpg)
 
-## High-angle tenting on 11/12/2021
+### High-angle tenting on 11/12/2021
 
 A bridge connecting the two halves turns out to be a good solution for high-angle tenting. The bridge is simply the two tenting racks joined together, with small adjustments in size.
 
