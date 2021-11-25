@@ -177,3 +177,7 @@ For this build, I just used stranded wires for the matrix. It turns out to be si
 A bridge connecting the two halves turns out to be a good solution for high-angle tenting. The bridge is simply the two tenting racks joined together, with small adjustments in size.
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Bridge.jpg)
+
+With a little more engineering, the entire structure can be locked by tension so it can be easily moved around.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Bridge%20tension.jpg)
