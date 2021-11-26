@@ -135,10 +135,12 @@ There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/k
 ### Uploading firmware
  * Note down which controller pin each row/column is wired to. There are 5 rows and 12 columns. Column 0 is where left shift is and column 11 is where right shift is.
  * Plug in USB mini cable to the controller and connect the keyboard to a computer.
+ * Download [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html) which extends Arduino to support Teensy controllers.
  * Clone [firmware repo](https://github.com/macroxue/keyboard-firmware) on the computer.
- * Update [darknight2.h](https://github.com/macroxue/keyboard-firmware/blob/master/layouts/darknight2.h) with above-noted row pins and column pins.
- * Load [keyboard-firmware.ino](https://github.com/macroxue/keyboard-firmware/blob/master/keyboard-firmware.ino) into [Teensyduino](https://www.pjrc.com/teensy/teensyduino.html).
- * In Teensyduino, change "Tools > Board" setting to be "Teensy LC" or "Teensy 3.2/3.1" depending on the controller chip, and change "Tools > USB Type" setting to "Keyboard + Mouse + Joystick".
+ * Update [keyboards/darknight/darknight.ino](https://github.com/macroxue/keyboard-firmware/blob/master/keyboards/darknight/darknight.ino) with above-noted row pins and column pins.
+ * Create a symbolic link in Arduino's libraries directory to the cloned firmware directory.
+ * Open `darknight.ino` in Arduino IDE.
+ * In the IDE, change "Tools > Board" setting to be "Teensy LC" or "Teensy 3.2/3.1" depending on the controller chip, and change "Tools > USB Type" setting to "Keyboard + Mouse + Joystick".
  * Use "Sketch > Verify/Compile" to make sure the firmware compiles fine, then use "Sketch > Upload" to upload the firmare to the controller.
  * Test the new keyboard!
 
