@@ -28,7 +28,7 @@
  * 6 3D-printed case pieces and 2 tenting racks
    * Front piece, back piece and chip cover for each case
    * 8 M2x16 screws and 8 M2 nuts for assembling the cases
- * 60 Gateron red switches
+ * 60 Gateron red switches (or any Cherry MX compatible switches), plate mounted
  * 60 Blank PBT keycaps from a 120-piece set
    * 60 O-rings for dampening
  * One Teensy 3.2 or Teensy LC as controller
