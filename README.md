@@ -12,8 +12,8 @@
  * 60% keyboard for programmers, especially vim users
  * Symmetric ortholinear / matrix layout
  * Split and tentable
- * Tenting angle adjustable by moving the tenting racks inwards or outwards
- * Mild contour to adapt to finger lengths
+ * Tenting angle quickly adjustable by moving the tenting racks inwards or outwards
+ * Mild contour to adapt to finger lengths, with z-staggering and cherry-profile keycaps
 
 ## Layout
 
@@ -22,6 +22,7 @@
  * Ctrl and Fn keys are dual-role modifiers. When tapped, they produce Escape, Enter and Backspace instead. The only downside is that they can’t auto-repeat because they are modifiers when pressed and held. (Hint: Use Ctrl-Backspace to delete words.)
  * Left-click and right-click are at the bottom row of the left half. One can move the mouse with right hand and click on the keyboard with left hand.
  * Brackets and Backslash are at the bottom row of the right half. Single-quote is right above Enter. These changes allow the right half to have only 6 columns and mirror the left half.
+ * The blue keys are the home keys of fingers at rest.
 
 ## Parts
 
