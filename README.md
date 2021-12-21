@@ -100,6 +100,7 @@ There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/k
 
 ### Connecting the right matrix to controller: 2 hours
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Wiring%20controller.png)
+ * Avoid *pin 13* which is for the built-in LED
  * Figure out how to route the wires before soldering
  * Rows are routed with fairly short wires so either solid or stranded wires work
  * Columns are routed with stranded wires for flexibility
