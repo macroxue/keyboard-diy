@@ -71,6 +71,12 @@ There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/k
  * Orient switches: pins are at the top half
  * Install O-rings and keycaps: 10 minutes <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/O-ring.jpg width=200>
 
+### Wiring diagrams
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/right-wiring.png)
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/left-wiring.png)
+ * Use any of the digital pins except pin 13 (LED)
+ * Feel free to use pins different than what are in the diagrams
+
 ### Wiring switch columns: 2 hours, 1 for each split
 <img src=https://github.com/macroxue/keyboard-diy/blob/master/images/Soldering%20column.jpg width=600>
 
@@ -97,12 +103,6 @@ There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/k
  * Use a multimeter. Turn the dial to diode sign.
  * Red on column, black on row
  * Press the key at the column-row. Multimeter should read current.
-
-### Wiring diagrams
-![](https://github.com/macroxue/keyboard-diy/blob/master/images/right-wiring.png)
-![](https://github.com/macroxue/keyboard-diy/blob/master/images/left-wiring.png)
- * Use any of the digital pins except pin 13 (LED)
- * Feel free to use pins different than what are in the diagrams
 
 ### Connecting the right matrix to controller: 2 hours
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Wiring%20controller.png)
