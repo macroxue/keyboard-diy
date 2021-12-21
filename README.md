@@ -98,6 +98,12 @@ There are three choices of racks. [rack-rigid.stl](https://github.com/macroxue/k
  * Red on column, black on row
  * Press the key at the column-row. Multimeter should read current.
 
+### Wiring diagrams
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/right-wiring.png)
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/left-wiring.png)
+ * Use any of the digital pins except pin 13 (LED)
+ * Feel free to use pins different than what are in the diagrams
+
 ### Connecting the right matrix to controller: 2 hours
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Wiring%20controller.png)
  * Avoid *pin 13* which is for the built-in LED
