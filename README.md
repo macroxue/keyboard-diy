@@ -191,3 +191,14 @@ A bridge connecting the two halves turns out to be a good solution for high-angl
 With a little more engineering, the entire structure can be locked by tension so it can be easily moved around.
 
 ![](https://github.com/macroxue/keyboard-diy/blob/master/images/Bridge%20tension.jpg)
+
+### New build on 5/7/2023
+
+Darknight is officially missing in the office during the COVID pandemic. Site maintenance
+took it as a company equipment and recycled it. After nearly 4 years of heavy use, Gateron
+Red linear switches in WhiteKnight begin to fail. Tangerine is the new replacement build.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/Tangerine.jpg)
+
+One surprise is with the USB-C cable ordered from Amazon, which is thicker and has many
+more ground wires than before. I just leave them unused.
