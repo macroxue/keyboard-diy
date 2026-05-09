@@ -186,68 +186,92 @@ module case(left=false) {
   }
 
   // For rack-bridge: thickness=3; first_shelf=70; second_shelf=20;
-  module rack() {
+  module rack2d(second_shelf=18) {
     thickness=2.5;
     extra=1;
     rack_width=width+border*2+corner*2+thickness*2+extra;
     first_shelf=60;
-    second_shelf=18;
     rack_height=first_shelf+second_shelf+thickness*3;
     hook=5;
 
-    module rack2d() {
-      difference() {
-        square([rack_height, rack_width]);
-        translate([thickness,-d])
-          square([first_shelf,rack_width+d*2]);
-        translate([thickness*2+first_shelf,thickness])
-          square([second_shelf,rack_width-thickness*2]);
-        translate([rack_height-thickness-d,thickness+hook])
-          square([thickness+d*2,rack_width-thickness*2-hook*2]);
-        translate([-d,-d]) square([thickness+d*2,hook+d*2]);
-        translate([-d,rack_width-hook-d]) square([thickness+d*2,hook+d*2]);
-      }
-
-      module arc() {
-        difference() {
-          circle(d=first_shelf + thickness*2);
-          circle(d=first_shelf);
-          translate([-first_shelf/2-thickness,0])
-            square([first_shelf+thickness*2, first_shelf/2+thickness]);
-        }
-      }
-
-      module curvy() {
-        translate([first_shelf/2+thickness,rack_width-hook*2]) arc();
-        translate([first_shelf/2+thickness,rack_width/2]) rotate([180,0,0]) arc();
-        translate([first_shelf/2+thickness,hook*2]) rotate([0,0,180]) arc();
-        translate([first_shelf/2+thickness,rack_width/2]) arc();
-      }
-
-      module straight() {
-        angle=8;
-        shift=(first_shelf+thickness)*tan(angle)+0.1;
-        translate([0.5,shift]) rotate([0,0,-angle])
-          square([first_shelf + thickness*2, thickness]);
-        translate([0,rack_width/2-thickness/2])
-          square([first_shelf + thickness*2, thickness]);
-        translate([0.5,rack_width-thickness-shift]) rotate([0,0,angle])
-          square([first_shelf + thickness*2, thickness]);
-      }
-
-      //translate([first_shelf/2+thickness/2,first_shelf/2+hook])
-      //  square([thickness,rack_width-first_shelf-hook*2]);
-
-      curvy();
-      straight();
+    difference() {
+      square([rack_height, rack_width]);
+      translate([thickness,-d])
+        square([first_shelf,rack_width+d*2]);
+      translate([thickness*2+first_shelf,thickness])
+        square([second_shelf,rack_width-thickness*2]);
+      translate([rack_height-thickness-d,thickness+hook])
+        square([thickness+d*2,rack_width-thickness*2-hook*2]);
+      translate([-d,-d]) square([thickness+d*2,hook+d*2]);
+      translate([-d,rack_width-hook-d]) square([thickness+d*2,hook+d*2]);
     }
+
+    module arc() {
+      difference() {
+        circle(d=first_shelf + thickness*2);
+        circle(d=first_shelf);
+        translate([-first_shelf/2-thickness,0])
+          square([first_shelf+thickness*2, first_shelf/2+thickness]);
+      }
+    }
+
+    module curvy() {
+      translate([first_shelf/2+thickness,rack_width-hook*2]) arc();
+      translate([first_shelf/2+thickness,rack_width/2]) rotate([180,0,0]) arc();
+      translate([first_shelf/2+thickness,hook*2]) rotate([0,0,180]) arc();
+      translate([first_shelf/2+thickness,rack_width/2]) arc();
+    }
+
+    module straight() {
+      angle=8;
+      shift=(first_shelf+thickness)*tan(angle)+0.1;
+      translate([0.5,shift]) rotate([0,0,-angle])
+        square([first_shelf + thickness*2, thickness]);
+      translate([0,rack_width/2-thickness/2])
+        square([first_shelf + thickness*2, thickness]);
+      translate([0.5,rack_width-thickness-shift]) rotate([0,0,angle])
+        square([first_shelf + thickness*2, thickness]);
+    }
+
+    //translate([first_shelf/2+thickness/2,first_shelf/2+hook])
+    //  square([thickness,rack_width-first_shelf-hook*2]);
+
+    curvy();
+    straight();
+  }
+
+  module rack() {
     linear_extrude(height=5) rack2d();
   }
 
-  front();
-  translate([0,0,-ch-10]) back();
-  translate([0,-corner-3.5,-ch-30]) rack();
+  module rack_fold() {
+    translate([65, 0, 0]) rotate([0, -45, 0]) translate([-63, 0, 0]) difference() {
+      linear_extrude(height=5) rack2d(25.5);
+      translate([-137, -50, -100]) cube(200);
+    }
+
+    difference() {
+      linear_extrude(height=5) rack2d(25.5);
+      translate([65, -50, -100]) cube(200);
+    }
+  }
+
+  module tenting_folding() {
+    front();
+    translate([0,0,-ch]) back();
+    translate([130,-corner-3.5,-ch-66.5]) rotate([0, -90, 0]) rack_fold();
+    translate([40,-corner-3.5,-ch-5]) rotate([0, 0, 0]) rack_fold();
+  }
+
+  module printing() {
+    front();
+    translate([0,0,-ch-10]) back();
+    translate([0,-corner-3.5,-ch-40]) rack_fold();
+  }
+
+  printing();
 }
+
 
 module chip_cover() {
   wall=0.5;

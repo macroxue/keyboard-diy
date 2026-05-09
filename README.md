@@ -29,7 +29,7 @@
  * 6 3D-printed case pieces and 2 tenting racks
    * Front piece, back piece and chip cover for each case
    * 8 M2x16 screws and 8 M2 nuts for assembling the cases
- * 60 Gateron red switches (or any Cherry MX compatible switches), plate mounted
+ * 60 ~~Gateron Red~~ Cherry MX Silent Red switches (or any Cherry MX compatible switches), plate mounted
  * 60 Blank PBT keycaps from a 120-piece set
    * 60 O-rings for dampening
  * One Teensy 3.2 or Teensy LC as controller
@@ -202,3 +202,19 @@ Red linear switches in WhiteKnight begin to fail. Tangerine is the new replaceme
 
 One surprise is with the USB-C cable ordered from Amazon, which is thicker and has many
 more ground wires than before. I just leave them unused.
+
+### Foldable rack on 5/26/2026
+
+I put my tented keyboard on a tray but the tray can't close because the
+keyboard is too tall. If I just leave the setup that way after work, the next
+day I will see the keyboard and the tray knocked off position by the cleaning
+lady. I end up untenting the keyboard at the end of a day and tenting it the
+next day. It takes 30 seconds for either step and it can be better.
+
+Here is the
+[new rack design](https://github.com/macroxue/keyboard-diy/blob/master/models/rack-fold.stl)
+to enable 3-second tenting or untenting. I forgot to add supports for the print
+but it turned out OK, not pretty but functional.
+
+![](https://github.com/macroxue/keyboard-diy/blob/master/images/rack-fold.jpg)
+
